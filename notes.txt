@@ -1,0 +1,56 @@
+QUESTIONS:
+What happens if I bit shift an 8 bit value >=8 times?
+
+DATA TYPES:
+
+proc
+label
+constant
+text
+
+DIRECTIVES:
+
+.data
+.data?
+.const
+.code
+
+option	casemap:none
+
+BIT MASKING:
+and 00FF	Set HO Byte to 0s
+or	00FF	Set LO Byte to 1s
+xor FFFF	Invert bits
+
+OPERATIONS:
+
+add/sub
+and/or/
+not/xor
+
+lea
+
+cmp
+jmp
+jz
+je
+jl
+jg
+
+[]
+variable[const]
+[ + const]
+
+mov
+movzx
+
+imul		imul destreg, constant
+			imul destreg, srcreg
+			imul destreg, srcreg, constant
+			
+			no 8 bit
+			signed mult
+			sets carry and overflow
+			doesn't set sign or zero
+
+inc/dec
